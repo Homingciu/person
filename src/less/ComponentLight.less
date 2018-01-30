@@ -1,0 +1,53 @@
+.ComponentLight {
+    background: #222;
+    p {
+      font-size: 40px;
+    }
+
+    .klam {
+      text-align: center;
+      line-height: 50px;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      color: #222;
+      z-index: 1;
+      animation: shadow 5.0s ease-in-out infinite;
+    }
+
+    .noor {
+        position: absolute;
+        top: -10px;
+        left: 50px;
+        width: 80px;
+        height: 80px; 
+        opacity: 0.8;
+        border-radius: 50%;
+        z-index: 0;
+        background: 
+          -webkit-radial-gradient(center, ellipse cover, #fff 0%, rgba(255, 255, 255, 0.2) 100%); 
+        box-shadow: 0px 0px 50px #fff;
+        animation: noor 5.0s ease-in-out infinite;
+    }
+
+    .two {z-index: 2;opacity: 0.8;}
+
+    @-webkit-keyframes noor {
+        0% {left: -80px;}
+        50% {left: 100%;}
+        100% {left: -80px;}
+    }
+
+    @-webkit-keyframes shadow {
+      0% {text-shadow: -9px 1px 4px #222;}
+      50% {text-shadow: 9px 1px 4px #222; }
+      100% {text-shadow: -9px 1px 4px #222;}    
+    }
+}
+
+// .content {position: relative;width: 750px;margin: 0 auto;}
+
+
+
+
+ 
